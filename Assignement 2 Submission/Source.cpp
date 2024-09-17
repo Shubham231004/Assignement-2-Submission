@@ -31,13 +31,16 @@ int main() {
         file.close();
     }
     else {
-        std::cerr << "Unable to open file";
+        std::cerr << "Unable to open file" << std::endl;
     }
 
-    // Output the students' names for verification
+    // This code block will only run in Debug mode
+#ifdef _DEBUG
+    std::cout << "Debug Mode: Printing student information..." << std::endl;
     for (const auto& student : students) {
         std::cout << student.firstName << " " << student.lastName << std::endl;
     }
+#endif
 
     return 0;
 }
