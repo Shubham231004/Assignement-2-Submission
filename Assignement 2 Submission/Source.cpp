@@ -11,7 +11,7 @@ struct STUDENT_DATA {
 
 int main() {
     std::vector<STUDENT_DATA> students;
-    std::ifstream file("StudentData.txt");
+    std::ifstream file("D:\\Shubham 1\\Conestoga\\Semester 5\\Advanced Software Development\\Assignement 2 Submission\\StudentData.txt");
     std::string line;
 
     if (file.is_open()) {
